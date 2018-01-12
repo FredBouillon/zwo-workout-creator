@@ -1,5 +1,5 @@
-const target = chart.series[0].processedYData;
-const time = chart.series[0].processedXData;
+const target = chart.series[0].yData;
+const time = chart.series[0].xData;
 let result = [];
 let intervalInitialValue = 0;
 
@@ -150,40 +150,3 @@ console.log('Total time:', `${time[time.length-1]/1000} (${Math.ceil((time[time.
 console.log('Total workout time:', `${getTotalWorkoutTime()} (${Math.ceil(getTotalWorkoutTime()/60)})`);
 
 downloadZwoFile();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
